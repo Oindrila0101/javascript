@@ -36,3 +36,27 @@ function loginuser(username="oin"){
 
 //console.log(loginuser("oindrila"));
 console.log(loginuser());
+
+function calculateprice(/*(val1,val2)*/...num1){
+    return num1;
+}
+console.log(calculateprice(200,400,500));
+
+const user={
+    usernameone:"oindrila",
+    price:200,
+};
+function handleobject(anyobject){
+    console.log(`username is ${anyobject.usernameone} and price is ${anyobject.price}`);
+}
+//handleobject(user);
+handleobject({
+    usernameone:"sam",
+    price:399,
+});
+
+const newarray=[200,400,100,600];
+function returnsecondvalue(getarray){
+    return getarray[1]
+};
+console.log(returnsecondvalue(newarray));
