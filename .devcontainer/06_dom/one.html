@@ -4,14 +4,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom learning</title>
-</head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning</h1>
-        <p>Dom Dom Dom Dom.</p>
-    </div>
     
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
 </body>
 </html>
+
+//document object model is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+//document is an object that represents the whole HTML document. It is the entry point to the web page's content, allowing developers to access and manipulate elements, attributes, and text within the document.
+//document methods and properties are used to select, create, modify, and delete elements in the DOM. Some common methods include getElementById(), getElementsByClassName(), querySelector(), createElement(), appendChild(), removeChild(), and many more.
+//methods are functions that perform specific actions on the document or its elements. They allow developers to interact with the DOM and manipulate its structure and content dynamically.
+//document.getElementById()('title') is a method that retrieves an element from the DOM based on its unique ID attribute. It returns the first element with the specified ID, allowing developers to access and manipulate that specific element directly.
+//title.textContent is a property that represents the text content of an element. It allows developers to get or set the text within an element, enabling dynamic updates to the displayed content on the web page.
+//title.style.color = 'red' is a way to change the inline style of an element using JavaScript. By accessing the style property of an element, developers can modify its CSS properties, such as color, font size, background color, and more, to dynamically alter the appearance of the element on the page.
+//title.innerHTML is a property that represents the HTML content of an element. It allows developers to get or set the HTML markup within an element, enabling dynamic updates to the structure and content of the web page.
+//title.innerText is a property that represents the text content of an element, similar to textContent. However, innerText takes into account the styling and layout of the element, while textContent retrieves the raw text without considering CSS styles. It allows developers to get or set the visible text within an element, enabling dynamic updates to the displayed content on the web page.
+//document.getElementsByClassName() is a method that retrieves a collection of elements from the DOM based on their class name. It returns a live HTMLCollection of all elements with the specified class, allowing developers to access and manipulate multiple elements at once.
+//document.querySelector() is a method that retrieves the first element from the DOM that matches a specified CSS selector. It allows developers to select elements using complex selectors, such as class names, IDs, attributes, and pseudo-classes, providing flexibility in targeting specific elements for manipulation.
+//document.querySelectorAll() is a method that retrieves a static NodeList of all elements from the DOM that match a specified CSS selector. It allows developers to select multiple elements using complex selectors, enabling batch manipulation of elements on the web page.
+//tempLiList[0].style.color = 'red' is a way to change the inline style of multiple elements using JavaScript. By accessing the style property of each element in a collection, developers can modify their CSS properties, such as color, font size, background color, and more, to dynamically alter the appearance of those elements on the page.
+//tempLiList.forEach((li) => { li.style.color = 'red'; }) is a way to iterate over a collection of elements and change their inline styles using JavaScript. The forEach() method allows developers to apply a function to each element in the collection, enabling batch manipulation of their CSS properties, such as color, font size, background color, and more, to dynamically alter the appearance of those elements on the page.
+//Array.from(tempLiList).forEach((li) => { li.style.color = 'red'; }) is a way to convert a collection of elements into an array and then iterate over it to change their inline styles using JavaScript. The Array.from() method creates a new array from the collection, allowing developers to use array methods like forEach() to apply a function to each element, enabling batch manipulation of their CSS properties, such as color, font size, background color, and more, to dynamically alter the appearance of those elements on the page.
